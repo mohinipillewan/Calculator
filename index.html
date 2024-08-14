@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+     
+      .calculator-body {
+        border-radius: 10px;
+        padding: 40px;
+        padding-top: 40px;
+        height: 310px;
+        width: 290px;
+        background-color: #4b4b56;
+        margin: 60px auto;
+        
+      }
+
+      .screen {
+        background-color: #a1af77;
+        text-align: right;
+        width: 300px;
+        height:70px;
+        display: block;
+        margin: 0 auto;
+        font-size: 35px;
+        padding: 2px 2px;
+        margin-bottom: 20px;
+        font-family: "DS-Digital Normal";
+      }
+
+      .buttons-container {
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .btns {
+        width: 50px;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 20px;
+        margin: 5px;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        box-shadow: 0 0 5px 0 #fff;
+        transition: 0.5s;
+      }
+
+      .color-change {
+        background-color: #4350a6;
+        height: 70px;
+        color: #fff;
+      }
+
+      @font-face {
+        font-family: "DS-Digital Normal";
+        font-style: normal;
+        font-weight: normal;
+        src: local("DS-Digital Normal"), 
+        url("DS-DIGI.woff") 
+        format("woff");
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="calculator-body">
+      <input type="text" value="0" class="screen" />
+
+      <div class="buttons-container">
+        <button class="btns">7</button>
+        <button class="btns">4</button>
+        <button class="btns">1</button>
+        <button class="btns">0</button>
+
+        <button class="btns">8</button>
+        <button class="btns">2</button>
+        <button class="btns">5</button>
+        <button class="btns">.</button>
+
+        <button class="btns">9</button>
+        <button class="btns">6</button>
+        <button class="btns">3</button>
+        <button class="btns">x10</button>
+
+        <button class="btns change-color">DEL</button>
+        <button class="btns">X</button>
+        <button class="btns">+</button>
+        <button class="btns">Ans</button>
+
+        <button class="btns change-color">AC</button>
+        <button class="btns">/</button>
+        <button class="btns">-</button>
+        <button class="btns">=</button>
+      </div>
+    </div>
+  </body>
+</html>
